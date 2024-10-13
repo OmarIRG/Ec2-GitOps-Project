@@ -1,0 +1,8 @@
+---
+- hosts: public
+  become: true
+  remote_user: ubuntu  # Replace with the correct SSH username for your instance type
+  roles:
+    - docker_role
+  vars:
+    ansible_python_interpreter: /usr/bin/python3  # Force Python 3 if needed
