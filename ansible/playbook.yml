@@ -1,7 +1,7 @@
 ---
 - hosts: public
   become: true
-  remote_user: ubuntu  # Replace with the correct SSH username for your instance type
+  remote_user: ubuntu 
   roles:
     - docker_role
   vars:
